@@ -1,4 +1,4 @@
-# 告诉编辑器这是最顶层的（不要再向上找了） EditorConfig 文件
+# 告诉编辑器这是最顶层的（不要再向上找了）
 root = true
 
 [*]
@@ -11,5 +11,5 @@ insert_final_newline = true      # 始终在文件末尾插入一个新行
 max_line_length = 160            # 单行最大字符数 160
 
 [*.md]
-insert_final_newline = false
-trim_trailing_whitespace = false
+insert_final_newline = false      # 不在文件末尾插入一个新行
+trim_trailing_whitespace = false  # 不删除行尾空格
