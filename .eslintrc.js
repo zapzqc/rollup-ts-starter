@@ -11,10 +11,11 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
-  plugins: ['import'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './tsconfig.json', // 要在tsconfig中设置编译的版本
+    project: './tsconfig.json', // 项目的 tsconfig.json 路径
   },
+  plugins: ['import'],
   rules: {
     'max-len': ['error', { code: 160 }], // 单行最大160个字符
   },
